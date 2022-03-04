@@ -19,16 +19,18 @@ const Footer = () => {
 
 	return (
 		<footer>
-			<ul>
-				{/* <li>
-					<a href="#remove-completed">Clean up list</a>
-				</li> */}
-				<li>
-					<a href="#show-completed" onClick={handleCompleted}>
-						{toggleCompleted ? "Completed only" : "Show All"}
-					</a>
-				</li>
-			</ul>
+			<button
+				onClick={handleCompleted}
+				disabled={toggleCompleted ? "" : "disabled"}
+			>
+				Completed only
+			</button>
+			<button
+				onClick={handleCompleted}
+				disabled={toggleCompleted ? "disabled" : ""}
+			>
+				Show all
+			</button>
 		</footer>
 	);
 };
