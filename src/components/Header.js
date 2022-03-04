@@ -21,7 +21,12 @@ const Header = () => {
 		<header>
 			<h1>TODO</h1>
 			<form action="/" onSubmit={handleSubmit}>
-				<input type="text" value={newTodo} onChange={handeChange} />
+				<input
+					autoFocus
+					type="text"
+					value={newTodo}
+					onChange={handeChange}
+				/>
 			</form>
 		</header>
 	);
