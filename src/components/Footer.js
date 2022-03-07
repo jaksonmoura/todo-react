@@ -19,7 +19,7 @@ const Footer = () => {
 	};
 
 	return (
-		<footer>
+		<FooterWrapper>
 			<button
 				onClick={handleCompleted}
 				disabled={toggleCompleted ? "" : "disabled"}
@@ -32,7 +32,7 @@ const Footer = () => {
 			>
 				Show all
 			</button>
-		</footer>
+		</FooterWrapper>
 	);
 };
 

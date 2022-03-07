@@ -11,8 +11,8 @@ function App() {
 			<BoxWrapper>
 				<Header />
 				<Todos />
+				<Footer />
 			</BoxWrapper>
-			<Footer />
 		</div>
 	);
 }
