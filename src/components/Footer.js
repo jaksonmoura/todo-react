@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { statusFilters, statusChanged } from "./filtersSlice";
+import { FooterWrapper } from "./Footer.styles";
 
 const Footer = () => {
 	const [toggleCompleted, setToggleCompleted] = useState(false);
@@ -18,7 +19,7 @@ const Footer = () => {
 	};
 
 	return (
-		<footer>
+		<FooterWrapper>
 			<ul>
 				{/* <li>
 					<a href="#remove-completed">Clean up list</a>
@@ -29,7 +30,7 @@ const Footer = () => {
 					</a>
 				</li>
 			</ul>
-		</footer>
+		</FooterWrapper>
 	);
 };
 

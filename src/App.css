@@ -1,3 +1,9 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
   background: #e1ceeb;
   display: inline-flex;
@@ -12,12 +18,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #fff;
   width: 90%;
   max-width: 500px;
-  padding: 1rem;
-  border-radius: 6px;
-  box-shadow: 15px 15px 30px rgba(rgb(23, 2, 36), 0.5);
 }
 
 .App-logo {

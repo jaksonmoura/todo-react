@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { todoAdded } from "./todosSlice";
+import { NewTodo } from "./Header.styles";
 
 const Header = () => {
 	const dispatch = useDispatch();
@@ -19,9 +20,10 @@ const Header = () => {
 
 	return (
 		<header>
-			<h1>TODO</h1>
 			<form action="/" onSubmit={handleSubmit}>
-				<input type="text" value={newTodo} onChange={handeChange} />
+				<NewTodo>
+					<input type="text" value={newTodo} onChange={handeChange} />
+				</NewTodo>
 			</form>
 		</header>
 	);
