@@ -27,6 +27,7 @@ export const TodoItem = styled.li`
 	position: relative;
 	padding: 1rem 0 1rem 1.7rem;
 	color: #555;
+	cursor: default;
 	&:not(:last-of-type) {
 		border-bottom: 1px solid #e5e5e5;
 	}
@@ -46,8 +47,8 @@ export const TodoItem = styled.li`
 	&:before {
 		content: "";
 		position: absolute;
-		top: calc(50% - 9px);
-		left: -0.25rem;
+		top: calc(50% - 8px);
+		left: 0;
 		width: 18px;
 		height: 18px;
 		border-radius: 50%;
@@ -59,8 +60,8 @@ export const TodoItem = styled.li`
 	&:after {
 		content: "";
 		position: absolute;
-		top: calc(50% - 6px);
-		left: 2px;
+		top: calc(50% - 5px);
+		left: 6px;
 		width: 6px;
 		height: 10px;
 		border: 2px solid #999;
