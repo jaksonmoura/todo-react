@@ -9,7 +9,7 @@ const Header = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log(newTodo);
+		if (newTodo === "") return;
 		dispatch(todoAdded(newTodo));
 		setNewTodo("");
 	};
