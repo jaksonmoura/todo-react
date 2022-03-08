@@ -22,7 +22,12 @@ const Header = () => {
 		<header>
 			<form action="/" onSubmit={handleSubmit}>
 				<NewTodo>
-					<input type="text" value={newTodo} onChange={handeChange} />
+					<input
+						type="text"
+						value={newTodo}
+						onChange={handeChange}
+						autoFocus
+					/>
 				</NewTodo>
 			</form>
 		</header>

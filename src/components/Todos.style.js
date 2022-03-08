@@ -31,13 +31,10 @@ export const TodoItem = styled.li`
 		border-bottom: 1px solid #e5e5e5;
 	}
 
-	&:first-of-type {
-		${"" /* padding-top: 0; */}
-	}
-
 	&.completed {
+		color: #999;
 		&:before {
-			background: green;
+			background: #109b47;
 		}
 		&:after {
 			border: 2px solid #fff;
